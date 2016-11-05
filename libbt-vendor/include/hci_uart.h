@@ -93,6 +93,7 @@
 
 /* UART CLOCK IOCTLS*/
 /* UART CLOCK IOCTLS*/
+#ifdef TIOCPMGET
 #define USERIAL_OP_CLK_ON    TIOCPMGET    /* PM get */
 #else
 #define USERIAL_OP_CLK_ON    0x5441       /* PM get */
